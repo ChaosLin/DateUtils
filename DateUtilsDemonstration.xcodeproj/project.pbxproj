@@ -19,6 +19,8 @@
 		59C1DCEA18FA753D0036BEC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C1DCD218FA753D0036BEC5 /* UIKit.framework */; };
 		59C1DCF218FA753D0036BEC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59C1DCF018FA753D0036BEC5 /* InfoPlist.strings */; };
 		59C1DCF418FA753D0036BEC5 /* DateUtilsDemonstrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C1DCF318FA753D0036BEC5 /* DateUtilsDemonstrationTests.m */; };
+		59C1DD0018FA755A0036BEC5 /* DateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C1DCFF18FA755A0036BEC5 /* DateUtils.m */; };
+		59C1DD0118FA755A0036BEC5 /* DateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C1DCFF18FA755A0036BEC5 /* DateUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		59C1DCEF18FA753D0036BEC5 /* DateUtilsDemonstrationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DateUtilsDemonstrationTests-Info.plist"; sourceTree = "<group>"; };
 		59C1DCF118FA753D0036BEC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59C1DCF318FA753D0036BEC5 /* DateUtilsDemonstrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateUtilsDemonstrationTests.m; sourceTree = "<group>"; };
+		59C1DCFE18FA755A0036BEC5 /* DateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtils.h; sourceTree = "<group>"; };
+		59C1DCFF18FA755A0036BEC5 /* DateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		59C1DCC218FA753D0036BEC5 = {
 			isa = PBXGroup;
 			children = (
+				59C1DCFD18FA755A0036BEC5 /* DateUtils */,
 				59C1DCD418FA753D0036BEC5 /* DateUtilsDemonstration */,
 				59C1DCED18FA753D0036BEC5 /* DateUtilsDemonstrationTests */,
 				59C1DCCD18FA753D0036BEC5 /* Frameworks */,
@@ -142,6 +147,15 @@
 				59C1DCF018FA753D0036BEC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59C1DCFD18FA755A0036BEC5 /* DateUtils */ = {
+			isa = PBXGroup;
+			children = (
+				59C1DCFE18FA755A0036BEC5 /* DateUtils.h */,
+				59C1DCFF18FA755A0036BEC5 /* DateUtils.m */,
+			);
+			path = DateUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59C1DCDF18FA753D0036BEC5 /* AppDelegate.m in Sources */,
+				59C1DD0018FA755A0036BEC5 /* DateUtils.m in Sources */,
 				59C1DCDB18FA753D0036BEC5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59C1DCF418FA753D0036BEC5 /* DateUtilsDemonstrationTests.m in Sources */,
+				59C1DD0118FA755A0036BEC5 /* DateUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
