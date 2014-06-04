@@ -26,6 +26,8 @@
 //20140412 -> 6
 //discussion:Return -1 when the dayId is not correct;
 + (NSInteger)getWeekDayWithDayId:(NSInteger)dayId;
+//isWeekDay
++ (BOOL)isWeekendWithDayID:(NSInteger)dayID;
 
 #pragma mark - CalendarView
 //20140412 -> 2 [0 ~ 5]

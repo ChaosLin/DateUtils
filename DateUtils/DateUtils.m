@@ -172,6 +172,19 @@
     return 0 == weekday?7:weekday;
 }
 
++ (BOOL)isWeekendWithDayID:(NSInteger)dayID
+{
+    NSInteger weekday = [self getWeekDayWithDayId:dayID];
+    if (6 <= weekday && 7 >= weekday)
+    {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+}
+
 #pragma mark - CalendarView
 + (NSInteger)daysInFirstWeek:(NSInteger)dayId
 {

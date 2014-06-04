@@ -121,4 +121,49 @@
     XCTAssert(5 == [DateUtils numberOfRowsInYear:2015 month:11], @"fail");
     XCTAssert(5 == [DateUtils numberOfRowsInYear:2015 month:12], @"fail");
 }
+
+- (void)testIsWeekendWithDayID
+{
+    XCTAssert(![DateUtils isWeekendWithDayID:20140401], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140402], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140403], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140404], @"fail");
+    XCTAssert([DateUtils isWeekendWithDayID:20140405], @"fail");
+    XCTAssert([DateUtils isWeekendWithDayID:20140406], @"fail");
+    
+    XCTAssert(![DateUtils isWeekendWithDayID:20140407], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140408], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140409], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140410], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140411], @"fail");
+    XCTAssert([DateUtils isWeekendWithDayID:20140412], @"fail");
+    XCTAssert([DateUtils isWeekendWithDayID:20140413], @"fail");
+    
+    XCTAssert(![DateUtils isWeekendWithDayID:20140414], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140415], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140416], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140417], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140418], @"fail");
+    XCTAssert([DateUtils isWeekendWithDayID:20140419], @"fail");
+    XCTAssert([DateUtils isWeekendWithDayID:20140420], @"fail");
+    
+    XCTAssert(![DateUtils isWeekendWithDayID:20140421], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140422], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140423], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140424], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140425], @"fail");
+    XCTAssert([DateUtils isWeekendWithDayID:20140426], @"fail");
+    XCTAssert([DateUtils isWeekendWithDayID:20140427], @"fail");
+    
+    XCTAssert(![DateUtils isWeekendWithDayID:20140428], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140429], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140430], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140501], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140502], @"fail");
+    XCTAssert([DateUtils isWeekendWithDayID:20140503], @"fail");
+    XCTAssert([DateUtils isWeekendWithDayID:20140504], @"fail");
+    
+    XCTAssert(![DateUtils isWeekendWithDayID:20140505], @"fail");
+    XCTAssert(![DateUtils isWeekendWithDayID:20140506], @"fail");
+}
 @end
