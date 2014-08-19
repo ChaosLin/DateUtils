@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString* getStringFromDayID(NSInteger dayID);
+extern NSInteger getDayIDFromString(NSString* dateString);
+
 @interface DateUtils : NSObject
 
 //Calculate with year, month and day;

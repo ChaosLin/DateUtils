@@ -163,7 +163,7 @@
 }
 
 //20140412 -> 6
-//discussion:Return -1 when the dayId is not corre  ct;
+//discussion:Return -1 when the dayId is not correct;
 + (NSInteger)getWeekDayWithDayId:(NSInteger)dayId
 {
     struct tm* dateStruct = [self getTimeStructWithDayId:dayId];
@@ -226,3 +226,15 @@
     return row + 1;
 }
 @end
+
+#pragma mark - 转换
+
+NSString* getStringFromDayID(NSInteger dayID)
+{
+    return [NSString stringWithFormat:@"%d", dayID];
+}
+
+NSInteger getDayIDFromString(NSString* dateString)
+{
+    return [dateString integerValue];
+}
