@@ -156,11 +156,6 @@
     return [self getDateWithTm:time_temp];
 }
 
-+ (NSInteger)getTodayDateId
-{
-    return [self getDayIdWithDate:[NSDate date]];
-}
-
 + (NSInteger)getDayIdWithDays:(NSInteger)days afterDayId:(NSInteger)dateId_origin
 {
     NSDate* date_origin = [self getDateWithDayId:dateId_origin];

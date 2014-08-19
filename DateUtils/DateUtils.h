@@ -27,8 +27,6 @@ extern NSInteger getDayIDFromString(NSString* dateString);
 //20140412->NSDate
 + (NSDate*)getDateWithDayId:(NSInteger)dayId;
 
-+ (NSInteger)getTodayDateId;
-
 //20140412 2 -> 20140414
 + (NSInteger)getDayIdWithDays:(NSInteger)days afterDayId:(NSInteger)dateId_origin;
 
