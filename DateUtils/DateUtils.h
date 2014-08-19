@@ -17,12 +17,18 @@
 #pragma mark - Transform
 //Calculate with NSDate object;
 + (NSInteger)getDayIdWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
+
 //NSDate->20140412
 + (NSInteger)getDayIdWithDate:(NSDate*)date;
+
 //20140412->NSDate
 + (NSDate*)getDateWithDayId:(NSInteger)dayId;
+
++ (NSInteger)getTodayDateId;
+
 //20140412 2 -> 20140414
 + (NSInteger)getDayIdWithDays:(NSInteger)days afterDayId:(NSInteger)dateId_origin;
+
 //20140412 -> 6
 //discussion:Return -1 when the dayId is not correct;
 + (NSInteger)getWeekDayWithDayId:(NSInteger)dayId;

@@ -150,20 +150,20 @@
     return [self getDateWithTm:time_temp];
 }
 
++ (NSInteger)getTodayDateId
+{
+    return [self getDayIdWithDate:[NSDate date]];
+}
+
 + (NSInteger)getDayIdWithDays:(NSInteger)days afterDayId:(NSInteger)dateId_origin
 {
-    NSInteger year = dateId_origin / 10000 - 1900;
-    NSInteger month = dateId_origin % 10000 / 100 - 1;
-    NSInteger day = dateId_origin % 100;
-    struct tm* tm_new = [self getTempTm];
-    tm_new->tm_year = (int)year;
-    tm_new->tm_mon = (int)month;
-    tm_new->tm_mday = (int)day + (int)days;
-    return [self getDayIdWithTm:tm_new];
+    NSDate* date_origin = [self getDateWithDayId:dateId_origin];
+    NSDate* date_new = [NSDate dateWithTimeInterval:days * 60 * 60 * 24 sinceDate:date_origin];
+    return [self getDayIdWithDate:date_new];
 }
 
 //20140412 -> 6
-//discussion:Return -1 when the dayId is not correct;
+//discussion:Return -1 when the dayId is not corre  ct;
 + (NSInteger)getWeekDayWithDayId:(NSInteger)dayId
 {
     struct tm* dateStruct = [self getTimeStructWithDayId:dayId];
