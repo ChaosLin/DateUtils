@@ -38,6 +38,9 @@ extern NSInteger getDayIDFromString(NSString* dateString);
 //isWeekDay
 + (BOOL)isWeekendWithDayID:(NSInteger)dayID;
 
+//取得今天的DayID
++ (NSInteger)getTodayDateId;
+
 #pragma mark - CalendarView
 //20140412 -> 2 [0 ~ 5]
 + (NSInteger)getRowWithDayId:(NSInteger)dayId;

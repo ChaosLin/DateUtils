@@ -138,6 +138,12 @@
     return result;
 }
 
+//取得今天的DayID
++ (NSInteger)getTodayDateId
+{
+    return [self getDayIdWithDate:[NSDate date]];
+}
+
 + (NSDate*)getDateWithDayId:(NSInteger)dayId
 {
     NSInteger year = dayId / 10000 - 1900;
