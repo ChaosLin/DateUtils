@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString* getStringFromDayID(NSInteger dayID);
+extern NSString* GetStringFromDayID(NSInteger dayID);
 extern NSInteger getDayIDFromString(NSString* dateString);
 
 @interface DateUtils : NSObject

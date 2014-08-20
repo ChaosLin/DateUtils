@@ -230,7 +230,7 @@
 
 #pragma mark - 转换
 
-NSString* getStringFromDayID(NSInteger dayID)
+NSString* GetStringFromDayID(NSInteger dayID)
 {
     return [NSString stringWithFormat:@"%d", dayID];
 }
