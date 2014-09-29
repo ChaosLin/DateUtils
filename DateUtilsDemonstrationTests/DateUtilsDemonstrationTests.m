@@ -166,4 +166,11 @@
     XCTAssert(![DateUtils isWeekendWithDayID:20140505], @"fail");
     XCTAssert(![DateUtils isWeekendWithDayID:20140506], @"fail");
 }
+
+- (void)testGetFormat
+{
+    XCTAssert([[DateUtils changeToDateFormateWithDayID:20140505] isEqualToString:@"14-05-05"]);
+    XCTAssert([[DateUtils changeToDateFormateWithDayID:20081205] isEqualToString:@"08-12-05"]);
+    XCTAssert([[DateUtils changeToDateFormateWithDayID:19981105] isEqualToString:@"98-11-05"]);
+}
 @end

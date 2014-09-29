@@ -45,4 +45,7 @@ extern NSInteger getDayIDFromString(NSString* dateString);
 //20140412 -> 7 [0 ~ 6]
 + (NSInteger)getVolumeWithDayId:(NSInteger)dayId;
 + (NSInteger)numberOfRowsInYear:(NSInteger)year month:(NSInteger)month;
+
+#pragma mark - format
++ (NSString*)changeToDateFormateWithDayID:(NSInteger)dayId;
 @end

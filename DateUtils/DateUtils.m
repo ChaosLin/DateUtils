@@ -226,6 +226,16 @@
     NSInteger row = [self getRowWithDayId:dayId_last];
     return row + 1;
 }
+
+#pragma mark - format
++ (NSString*)changeToDateFormateWithDayID:(NSInteger)dayId
+{
+    NSInteger year = dayId / 10000 % 100;
+    NSInteger month = dayId / 100 % 100;
+    NSInteger day = dayId % 100;
+    id sth = [NSString stringWithFormat:@"%02d-%02d-%02d", year, month, day];
+    return sth;
+}
 @end
 
 #pragma mark - 转换

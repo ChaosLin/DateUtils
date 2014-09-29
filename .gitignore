@@ -1,2 +1,10 @@
 
 *.xccheckout
+
+*.xcbkptlist
+
+*.xcscheme
+
+*.xcuserstate
+
+*.plist
